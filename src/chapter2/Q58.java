@@ -9,14 +9,14 @@ public class Q58 {
 	          
 	          char a1[] = s1.toCharArray();
 	          
-	          a1[0]=(char)(a1[0]-'a'+'A');
+	          a1[0]=(char)(a1[0]-32);
 	          
 	          for(int i=1;i<s1.length();i++)
 	          
 	               if(a1[i]== ' ') 
 	               {
 	            	   i++;
-	            	   a1[i]=(char)(a1[i]-'a'+'A');
+	            	   a1[i]=(char)(a1[i]-32);
 	            	   
 	            	   
 	               }
