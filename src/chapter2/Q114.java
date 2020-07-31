@@ -54,16 +54,22 @@ public class Q114 {
 	    	
 	       }
        }
+	    /*for(i=0;i<l;i++)
+	    	System.out.print(a3[i]+",");
 	    int count=0;
 	    for(i=0;i<l;i++)
 	    {
-	    	for(j=i+1;j<l;j++)
+	    	for(j=i+1;j<l-1;j++)
 	    	{
 	    		if(a3[i]==a3[j])
 	    			 count++;
 	    	}
 	    }
+	    System.out.println();
+	    System.out.println(count);
 	    int n=l-count;
+	    System.out.println(n);
+	   
 	    
 	    int a4[]=new int[n];
 	    a4[0]=a3[0];
@@ -79,7 +85,23 @@ public class Q114 {
 	    		i++;
 	    }
 	    for(i=0;i<n;i++)
-	    	System.out.print(a4[i]+",");
+	    	System.out.print(a4[i]+",");*/
+	    
+	   int a5[]=new int[l];
+	  a5[0]=a3[0];
+	   j=1;
+	   for(i=1;i<l;i++)
+	   {
+		   if(a3[i]!=a3[i-1])
+		   {
+			   a5[j]=a3[i];
+			   j++;
+		   }
+			   
+       }
+	   for(i=0;i<j;i++)
+		   System.out.print(a5[i]+",");
+	   
 	    
 	}
 }
